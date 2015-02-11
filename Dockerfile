@@ -4,7 +4,7 @@ FROM andrioni/base
 MAINTAINER Alessandro Andrioni <alessandro.andrioni@dafiti.com.br>
 
 # Install Java and maven
-RUN apt-get update && apt-get -y install openjdk-7-jdk maven
+RUN apt-get update && apt-get -y install openjdk-7-jdk && apt-get -y install maven
 RUN ln -s /usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/amd64/server/libjvm.so /usr/lib/libjvm.so
 
 # Default DNS cache TTL is -1. DNS records, like, change, man.
